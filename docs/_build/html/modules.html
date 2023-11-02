@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="drawing_generator module" href="drawing_generator.html" /><link rel="prev" title="Welcome to Drawing Generator’s documentation!" href="index.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="prev" title="Drawing Generator documentation" href="index.html" />
 
     <!-- Generated with Sphinx 7.1.2 and Furo 2023.09.10 -->
-        <title>src - Drawing Generator 1.0.0 documentation</title>
+        <title>Classes - Drawing Generator 1.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
@@ -134,7 +134,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -154,12 +154,9 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
-<li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">src</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of src</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="drawing_generator.html">drawing_generator module</a></li>
-</ul>
-</li>
+  <ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#utilisation">Utilisation</a></li>
 </ul>
 
 </div>
@@ -188,39 +185,142 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          <section id="src">
-<h1>src<a class="headerlink" href="#src" title="Permalink to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="drawing_generator.html">drawing_generator module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="drawing_generator.html#drawing_generator.CouleursAleatoires"><code class="docutils literal notranslate"><span class="pre">CouleursAleatoires</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="drawing_generator.html#drawing_generator.CouleursAleatoires.nombre_couleurs"><code class="docutils literal notranslate"><span class="pre">CouleursAleatoires.nombre_couleurs</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="drawing_generator.html#drawing_generator.CouleursAleatoires.obtenir_couleur_aleatoire"><code class="docutils literal notranslate"><span class="pre">CouleursAleatoires.obtenir_couleur_aleatoire()</span></code></a></li>
+          <span class="target" id="module-random_image_generator"></span><div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Assurez-vous d’obtenir une clé d’accès valide à l’API Unsplash.</strong></p>
+<p><strong>Assurez-vous d’avoir Pillow, io, installé requests sur votre ordinateur.</strong></p>
+</div>
+<section id="classes">
+<h1>Classes<a class="headerlink" href="#classes" title="Permalink to this heading">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="random_image_generator.CouleursAleatoires">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">random_image_generator.</span></span><span class="sig-name descname"><span class="pre">CouleursAleatoires</span></span><a class="headerlink" href="#random_image_generator.CouleursAleatoires" title="Permalink to this definition">#</a></dt>
+<dd><p>Classe pour générer une liste de couleurs aléatoires.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>nombre_couleurs</strong> (<em>int</em>) – Le nombre de couleurs aléatoires à générer.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="random_image_generator.CouleursAleatoires.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nombre_couleurs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#random_image_generator.CouleursAleatoires.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>Initialise un objet CouleursAleatoires avec le nombre de couleurs à générer.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="random_image_generator.CouleursAleatoires.obtenir_couleur_aleatoire">
+<span class="sig-name descname"><span class="pre">obtenir_couleur_aleatoire</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#random_image_generator.CouleursAleatoires.obtenir_couleur_aleatoire" title="Permalink to this definition">#</a></dt>
+<dd><p>Retourne une couleur aléatoire parmi celles générées.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[int, int, int]</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Un tuple représentant une couleur au format (R, G, B).</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="random_image_generator.TraitsAleatoires">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">random_image_generator.</span></span><span class="sig-name descname"><span class="pre">TraitsAleatoires</span></span><a class="headerlink" href="#random_image_generator.TraitsAleatoires" title="Permalink to this definition">#</a></dt>
+<dd><p>Classe pour dessiner des traits aléatoires sur une image.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>image</strong> (<em>PIL.Image.Image</em>) – L’image sur laquelle les traits seront dessinés.</p></li>
+<li><p><strong>nb_traits</strong> (<em>int</em>) – Le nombre de traits à dessiner.</p></li>
+<li><p><strong>gestion_couleur</strong> (<a class="reference internal" href="#random_image_generator.CouleursAleatoires" title="random_image_generator.CouleursAleatoires"><em>CouleursAleatoires</em></a>) – L’instance de CouleursAleatoires pour la gestion des couleurs.</p></li>
 </ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="drawing_generator.html#drawing_generator.ImageAleatoire"><code class="docutils literal notranslate"><span class="pre">ImageAleatoire</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="drawing_generator.html#drawing_generator.ImageAleatoire.access_key"><code class="docutils literal notranslate"><span class="pre">ImageAleatoire.access_key</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="drawing_generator.html#drawing_generator.ImageAleatoire.get_random_image"><code class="docutils literal notranslate"><span class="pre">ImageAleatoire.get_random_image()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="drawing_generator.html#id0"><code class="docutils literal notranslate"><span class="pre">ImageAleatoire.get_random_image()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="drawing_generator.html#drawing_generator.TraitsAleatoires"><code class="docutils literal notranslate"><span class="pre">TraitsAleatoires</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="drawing_generator.html#drawing_generator.TraitsAleatoires.image"><code class="docutils literal notranslate"><span class="pre">TraitsAleatoires.image</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="drawing_generator.html#drawing_generator.TraitsAleatoires.nb_traits"><code class="docutils literal notranslate"><span class="pre">TraitsAleatoires.nb_traits</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="drawing_generator.html#drawing_generator.TraitsAleatoires.gestion_couleur"><code class="docutils literal notranslate"><span class="pre">TraitsAleatoires.gestion_couleur</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="drawing_generator.html#drawing_generator.TraitsAleatoires.dessiner"><code class="docutils literal notranslate"><span class="pre">TraitsAleatoires.dessiner()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="drawing_generator.html#id1"><code class="docutils literal notranslate"><span class="pre">TraitsAleatoires.dessiner()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="random_image_generator.TraitsAleatoires.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nb_traits</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gestion_couleur</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#random_image_generator.TraitsAleatoires.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>Initialise un objet TraitsAleatoires avec une image, le nombre de traits et une instance de CouleursAleatoires.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="random_image_generator.TraitsAleatoires.dessiner">
+<span class="sig-name descname"><span class="pre">dessiner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#random_image_generator.TraitsAleatoires.dessiner" title="Permalink to this definition">#</a></dt>
+<dd><p>Dessine les traits aléatoires sur l’image.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="random_image_generator.TraitsAleatoires.__str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#random_image_generator.TraitsAleatoires.__str__" title="Permalink to this definition">#</a></dt>
+<dd><p>Retourne une représentation sous forme de chaîne de caractères de l’objet TraitsAleatoires.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Chaîne de caractères représentant l’objet.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="random_image_generator.ImageAleatoire">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">random_image_generator.</span></span><span class="sig-name descname"><span class="pre">ImageAleatoire</span></span><a class="headerlink" href="#random_image_generator.ImageAleatoire" title="Permalink to this definition">#</a></dt>
+<dd><p>Classe pour récupérer une image aléatoire depuis l’API Unsplash.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>access_key</strong> (<em>str</em>) – La clé d’accès à l’API Unsplash.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="random_image_generator.ImageAleatoire.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#random_image_generator.ImageAleatoire.__init__" title="Permalink to this definition">#</a></dt>
+<dd><p>Initialise un objet ImageAleatoire avec la clé d’accès à l’API Unsplash.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="random_image_generator.ImageAleatoire.get_random_image">
+<span class="sig-name descname"><span class="pre">get_random_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#random_image_generator.ImageAleatoire.get_random_image" title="Permalink to this definition">#</a></dt>
+<dd><p>Récupère une image aléatoire depuis l’API Unsplash.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>L’image récupérée depuis l’API Unsplash.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>PIL.Image.Image</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="utilisation">
+<h1>Utilisation<a class="headerlink" href="#utilisation" title="Permalink to this heading">#</a></h1>
+<p>Exemple d’utilisation :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">access_key</span> <span class="o">=</span> <span class="s1">&#39;votre clé d’accès valide à l’API Unsplash&#39;</span>
+<span class="n">image_generator</span> <span class="o">=</span> <span class="n">ImageAleatoire</span><span class="p">(</span><span class="n">access_key</span><span class="p">)</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">image_generator</span><span class="o">.</span><span class="n">get_random_image</span><span class="p">()</span>
+
+<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;projet2_img.png&quot;</span><span class="p">)</span>
+<span class="n">ctx</span> <span class="o">=</span> <span class="n">ImageDraw</span><span class="o">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+
+<span class="n">nb_traits</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">250</span><span class="p">,</span> <span class="mi">350</span><span class="p">)</span>
+<span class="n">couleurs</span> <span class="o">=</span> <span class="n">CouleursAleatoires</span><span class="p">(</span><span class="n">nb_traits</span><span class="p">)</span>
+
+<span class="n">traits</span> <span class="o">=</span> <span class="n">TraitsAleatoires</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">nb_traits</span><span class="p">,</span> <span class="n">couleurs</span><span class="p">)</span>
+<span class="n">traits</span><span class="o">.</span><span class="n">dessiner</span><span class="p">()</span>
+
+<span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;dessin.png&#39;</span><span class="p">)</span>
+<span class="n">img</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s1">&#39;dessin.png&#39;</span><span class="p">)</span>
+</pre></div>
 </div>
 </section>
 
@@ -229,15 +329,7 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="drawing_generator.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title">drawing_generator module</div>
-              </div>
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-            </a>
+          
           <a class="prev-page" href="index.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
@@ -267,8 +359,43 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Classes</a><ul>
+<li><a class="reference internal" href="#random_image_generator.CouleursAleatoires"><code class="docutils literal notranslate"><span class="pre">CouleursAleatoires</span></code></a><ul>
+<li><a class="reference internal" href="#random_image_generator.CouleursAleatoires.__init__"><code class="docutils literal notranslate"><span class="pre">CouleursAleatoires.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#random_image_generator.CouleursAleatoires.obtenir_couleur_aleatoire"><code class="docutils literal notranslate"><span class="pre">CouleursAleatoires.obtenir_couleur_aleatoire()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#random_image_generator.TraitsAleatoires"><code class="docutils literal notranslate"><span class="pre">TraitsAleatoires</span></code></a><ul>
+<li><a class="reference internal" href="#random_image_generator.TraitsAleatoires.__init__"><code class="docutils literal notranslate"><span class="pre">TraitsAleatoires.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#random_image_generator.TraitsAleatoires.dessiner"><code class="docutils literal notranslate"><span class="pre">TraitsAleatoires.dessiner()</span></code></a></li>
+<li><a class="reference internal" href="#random_image_generator.TraitsAleatoires.__str__"><code class="docutils literal notranslate"><span class="pre">TraitsAleatoires.__str__()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#random_image_generator.ImageAleatoire"><code class="docutils literal notranslate"><span class="pre">ImageAleatoire</span></code></a><ul>
+<li><a class="reference internal" href="#random_image_generator.ImageAleatoire.__init__"><code class="docutils literal notranslate"><span class="pre">ImageAleatoire.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#random_image_generator.ImageAleatoire.get_random_image"><code class="docutils literal notranslate"><span class="pre">ImageAleatoire.get_random_image()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#utilisation">Utilisation</a></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
